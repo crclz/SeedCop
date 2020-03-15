@@ -62,6 +62,33 @@ namespace SeedCop {
         }
         
         /// <summary>
+        ///   查找类似 Controller action has no PutAsync 的本地化字符串。
+        /// </summary>
+        internal static string ActionPutAnalyzerDescription {
+            get {
+                return ResourceManager.GetString("ActionPutAnalyzerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Must have a call tp PutAsync to save entity 的本地化字符串。
+        /// </summary>
+        internal static string ActionPutAnalyzerMessageFormat {
+            get {
+                return ResourceManager.GetString("ActionPutAnalyzerMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Must call PutAsync 的本地化字符串。
+        /// </summary>
+        internal static string ActionPutAnalyzerTitle {
+            get {
+                return ResourceManager.GetString("ActionPutAnalyzerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Empty Constructor 的本地化字符串。
         /// </summary>
         internal static string CtorAnalyzerDescription {

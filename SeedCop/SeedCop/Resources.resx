@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActionPutAnalyzerDescription" xml:space="preserve">
+    <value>Controller action has no PutAsync</value>
+  </data>
+  <data name="ActionPutAnalyzerMessageFormat" xml:space="preserve">
+    <value>Must have a call tp PutAsync to save entity</value>
+  </data>
+  <data name="ActionPutAnalyzerTitle" xml:space="preserve">
+    <value>Must call PutAsync</value>
+  </data>
   <data name="CtorAnalyzerDescription" xml:space="preserve">
     <value>Empty Constructor</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
