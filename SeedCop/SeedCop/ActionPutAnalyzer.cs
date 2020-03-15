@@ -39,6 +39,12 @@ namespace SeedCop
 		{
 			var classDeclaration = (ClassDeclarationSyntax)context.Node;
 
+			if (classDeclaration.BaseList == null)
+				return;
+
+			if (classDeclaration.Identifier.Text.Contains("Query"))
+				return;
+
 			var isController = classDeclaration.BaseList.DescendantTokens().Any(p => p.Text == "ControllerBase");
 
 			if (!isController)
