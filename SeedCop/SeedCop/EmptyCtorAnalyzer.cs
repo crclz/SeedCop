@@ -44,7 +44,7 @@ namespace SeedCop
 
 			var baseListString = classDeclaration.BaseList.ToFullString();
 
-			if (baseListString.Contains("RootEntity") || baseListString.Contains("ValueObject"))
+			if (baseListString.Contains("Entity") || baseListString.Contains("ValueObject"))
 			{
 				// Then check if there is empty ctor
 
