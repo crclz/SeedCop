@@ -39,6 +39,9 @@ namespace SeedCop
 		{
 			var classDeclaration = (ClassDeclarationSyntax)context.Node;
 
+			if (classDeclaration.BaseList == null)
+				return;
+
 			var baseListString = classDeclaration.BaseList.ToFullString();
 
 			if (baseListString.Contains("RootEntity") || baseListString.Contains("ValueObject"))
