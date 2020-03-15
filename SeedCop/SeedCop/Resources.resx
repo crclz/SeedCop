@@ -138,4 +138,16 @@
     <value>Must have empty constructor</value>
     <comment>The title of the diagnostic.</comment>
   </data>
+  <data name="UpdatedNowAnalyzerDescription" xml:space="preserve">
+    <value>Must call UpdatedAtNow()</value>
+    <comment>An optional longer localizable description of the diagnostic.</comment>
+  </data>
+  <data name="UpdatedNowAnalyzerMessageFormat" xml:space="preserve">
+    <value>Must call UpdatedAtNow()</value>
+    <comment>The format-able message the diagnostic displays.</comment>
+  </data>
+  <data name="UpdatedNowAnalyzerTitle" xml:space="preserve">
+    <value>UpdatedNow Missing</value>
+    <comment>The title of the diagnostic.</comment>
+  </data>
 </root>

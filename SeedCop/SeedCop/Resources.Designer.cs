@@ -114,5 +114,32 @@ namespace SeedCop {
                 return ResourceManager.GetString("CtorAnalyzerTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 Must call UpdatedAtNow() 的本地化字符串。
+        /// </summary>
+        internal static string UpdatedNowAnalyzerDescription {
+            get {
+                return ResourceManager.GetString("UpdatedNowAnalyzerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Must call UpdatedAtNow() 的本地化字符串。
+        /// </summary>
+        internal static string UpdatedNowAnalyzerMessageFormat {
+            get {
+                return ResourceManager.GetString("UpdatedNowAnalyzerMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 UpdatedNow Missing 的本地化字符串。
+        /// </summary>
+        internal static string UpdatedNowAnalyzerTitle {
+            get {
+                return ResourceManager.GetString("UpdatedNowAnalyzerTitle", resourceCulture);
+            }
+        }
     }
 }
