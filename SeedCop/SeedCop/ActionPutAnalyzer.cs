@@ -53,7 +53,7 @@ namespace SeedCop
 			var commandActions = classDeclaration.Members
 				.Where(p => p.IsKind(SyntaxKind.MethodDeclaration))
 				.Select(p => (MethodDeclarationSyntax)p)
-				.Where(p => !p.AttributeLists.Any(t => t.DescendantTokens().Any(r => r.Text == "CQRSQuery")));
+				.Where(p => !p.AttributeLists.Any(t => t.DescendantTokens().Any(r => r.Text == "NotCommand")));
 
 			foreach (var methodDeclaration in commandActions)
 			{
